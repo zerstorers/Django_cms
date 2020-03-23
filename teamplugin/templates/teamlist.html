@@ -1,0 +1,18 @@
+
+
+
+<div class="row no-gutters">
+
+    {% for team in instance.teams.all %}
+    <div class="col-4 text-center pt-3">
+        <p>{{ team.first_name }}</p>
+        <p>{{ team.last_name }}</p>
+        <p>{{ team.role }}</p>
+        <p><img src="{{ team.picture }}" alt=""></p>
+        <p><a href="{{ team.facebook }}"></a>{{ team.facebook }}</p>
+        <p><a href="{{ team.twitter }}"></a>{{ team.twitter }}</p>
+        <p><a href="{{ team.linkedink }}"></a>{{ team.linkedink }}</p>
+    </div>
+    {% endfor %}
+
+</div>

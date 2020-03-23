@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% load cms_tags sekizai_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% addtoblock 'css' %}
+<link rel="stylesheet" href="/mysite/mysite/static/challenge_2.css">
+{% endaddtoblock %}
+
+{% block content %}
+
+
+
+
+
+<header>
+    <h1>Origamie</h1>
+    <p>A content Focused Wordpress Theme</p>
+    <img src="images/mag.png" alt="logo" class="search">
+    <nav>
+        <ul>
+            <li>
+                <select name="menu" id="menu">
+                    <option value="">Home Pages</option>
+                    <option value="">Menu 1</option>
+                    <option value="">Menu 2</option>
+                    <option value="">Menu 3</option>
+                </select>
+            </li>
+            <li>
+                <select name="page" id="page">
+                    <option value="">Pages Templates</option>
+                    <option value="">Blog Home</option>
+                    <option value="">Custom Home</option>
+                    <option value="">A Static Front Page</option>
+                </select>
+            </li>
+            <li>
+                <select name="gallerie" id="gallerie">
+                    <option value="">Galleries</option>
+                    <option value="">Menu 1</option>
+                    <option value="">Menu 2</option>
+                    <option value="">Menu 3</option>
+                </select>
+            </li>
+            <li>
+                <select name="masonry" id="masonry">
+                    <option value="">Masonry Layout</option>
+                    <option value="">Menu 1</option>
+                    <option value="">Menu 2</option>
+                    <option value="">Menu 3</option>
+                </select>
+            </li>
+            <li>
+                <select name="builder" id="builder">
+                    <option value="">Pages Builder</option>
+                    <option value="">Menu 1</option>
+                    <option value="">Menu 2</option>
+                    <option value="">Menu 3</option>
+                </select>
+            </li>
+            <li>
+                <select name="bundled" id="bundled">
+                    <option value="">Bundled Widget</option>
+                    <option value="">Menu 1</option>
+                    <option value="">Menu 2</option>
+                    <option value="">Menu 3</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <img src="/static/images/image1.jpg" alt="wife2">
+    {% placeholder article_chall2 %}
+    <!-- <h2>Up in the Clouds</h2>
+    <p>On May 6, 2013 by <a href="#">Greg Priday</a> With <a href="#">0</a> Comments - <a href="#">Images,</a><a
+            href="#"> Uncategorized</a></p>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At dolores, aperiam delectus sequi ipsam cum
+            earum! Qui ad quia velit amet debitis iusto quas quo facere numquam, harum expedita earum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente architecto nulla nemo exercitationem
+            dolore? Excepturi officiis libero, similique dolores earum blanditiis fugiat eos inventore voluptas quod
+            dicta ad aut alias!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga odit animi
+            saepe eum, iusto tenetur, veniam excepturi sit hic delectus doloremque? Eum ad illum, maiores omnis
+            tempora vero eos?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ipsa, repellat, quibusdam ea nam
+            maiores dicta molestias iusto minima omnis deserunt. Ratione autem ut eligendi debitis quod aut dicta
+            officiis?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, cumque consequuntur. Harum magnam
+            quaerat, odio fuga, dolorem consequuntur nam necessitatibus itaque molestiae rerum iure ipsam vitae
+            numquam hic, consectetur reiciendis!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+            incidunt est vitae error quidem iusto ratione minima ad repellat, assumenda nostrum corporis dolorum
+            inventore quod magni suscipit? Earum, quisquam vero. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Deserunt, tenetur iste velit obcaecati ea blanditiis eveniet amet unde temporibus, quaerat quasi
+            labore quam quia. Aut similique odit optio amet. Itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum culpa commodi explicabo quas quidem
+            excepturi ea asperiores libero, quis aut perspiciatis, vero obcaecati autem! Culpa quibusdam inventore
+            quisquam ducimus ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis, iusto
+            eaque perferendis iure ea porro ducimus. Veritatis asperiores magni cum. Fugiat, commodi? Recusandae
+            iure sunt ut quidem voluptate doloribus.</p>
+    </section> -->
+    <img src="images/bg.png" alt="hr" class="hr">
+    <p class="titre_footer">Older Entries</p>
+</main>
+<footer>
+    <article>
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#">Up in The Clouds</a></li>
+            <li><a href="#">gzerger</a></li>
+            <li><a href="#">erfrve</a></li>
+            <li><a href="#">vrvevr</a></li>
+            <li><a href="#">rvrvrrv</a></li>
+        </ul>
+    </article>
+    <article>
+        <h3>Recent Comments</h3>
+        <ul>
+            <li><a href="#">rzverve</a></li>
+            <li><a href="#">crecec</a></li>
+            <li><a href="#">cercrcc</a></li>
+            <li><a href="#">zegethth</a></li>
+            <li><a href="#">rfervcerc</a></li>
+            <li><a href="#">zerfzrcre</a></li>
+        </ul>
+    </article>
+    <article>
+        <h3>Archives</h3>
+        <ul>
+            <li><a href="#">sfaveccac</a></li>
+            <li><a href="#">czacec</a></li>
+            <li><a href="#">cezcac</a></li>
+            <li><a href="#">czece</a></li>
+        </ul>
+    </article>
+    <article>
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">zedzecc</a></li>
+            <li><a href="#">cazccccc</a></li>
+        </ul>
+    </article>
+</footer>
+{% endblock content %}

@@ -1,0 +1,9 @@
+<h1>mon super plugin {{instance.text}} </h1>
+
+<ul style="background-color: black;" class="text-warning">
+    {% for event in instance.events.all %}
+    <li class="bg-success">{{ event.title }}</li>
+    <li>{{ event.evenement }}</li>
+    <li>{{ event.picture }}</li>
+    {% endfor %}
+</ul>

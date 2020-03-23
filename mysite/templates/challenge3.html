@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load cms_tags sekizai_tags static %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% addtoblock 'css' %}
+<link rel="stylesheet" href="{%static 'challenge3.css' %}">
+{% endaddtoblock %}
+
+{% block content %}
+<body>
+    <div class="corps">
+        <header>
+            <nav>
+                <h1><a href="#">Pastime</a></h1>
+                <ul id="animate">
+                    <li><a href="#">HOME PAGE</a></li>
+                    <li><a href="#">OUR CLIENTS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CAREERS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <i class="fas fa-bars"></i>
+        </header>
+        <main>
+            <article>
+                <div class="wife">
+                    <img src="/static/images/pic01.jpg" alt="wife1">
+                    <img src="/static/images/pic02.jpg" alt="wife2">
+                    <img src="/static/images/pic03.jpg" alt="wife3">
+                </div>
+                <!-- <h2>etiam rhoncus voluptat</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nihil reprehenderit voluptates
+                    aque deleniti.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In perspiciatis sapiente velit quod eius
+                    similique neque dolorem sit fugiat corrupti molestias nihil recusandae non rerum, autem ratione
+                    repellendus! Ipsam, voluptatibus.</p>
+                <a href="#">Etiam posuere</a> -->
+                {% placeholder article_chall3 %}
+            </article>
+            <article>
+                <h2>nulla luctus eleifend</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem harum pariatur
+                    vitae</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius quo nulla dignissimos neque
+                    aliquid
+                    debitis quam mollitia saepe consectetur nesciunt sequi minima ratione, alias, repellat labore facere
+                    in
+                    quas!</p>
+                <a href="#">Etiam posuere</a>
+            </article>
+            <article>
+                <h2>nulla luctus eleifend</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem harum pariatur
+                    vitae</h3>
+                <p>Lorem ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Nemo eius quo nulla <a
+                        href="#">dignissimos neque</a>
+                    aliquid
+                    debitis quam mollitia saepe consectetur <a href="#">nesciunt sequi minima</a> ratione, alias,
+                    repellat labore facere
+                    in
+                    quas!</p>
+                <a href="#">Etiam posuere</a>
+            </article>
+            <article>
+                <form action=".">
+                    <label for="first">Name</label>
+                    <input type="text" name="name" placeholder="FirstName">
+                    <label for="last" id="last">Last Name</label>
+                    <input type="text" name="last" placeholder="LastName">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
+                    <label for="tel">Phone</label>
+                    <input type="tel" name="tel">
+                    <input type="submit" value="Envoyer">
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p> UNTITLED ALL RIGHT RESERVED. | PHOTOS BY <a href="#">FOTOGRPH</a> | DESIGN BY <a href="#">TEMPLATED</a>
+            </p>
+        </footer>
+    </div>
+    <script src="challenge3.js"></script>
+</body>
+
+</html>
+{% endblock content %}

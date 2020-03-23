@@ -1,0 +1,244 @@
+body {
+    font-family: 'News Cycle', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background-color: lightgray;
+
+}
+
+/*------------fin ensemble------------*/
+h1  {
+    width: 20%;
+}
+h1, ul, li{
+    display: inline-block;
+}
+.fa-bars {
+    display: none;
+}
+ul {
+    width: 70%;
+}
+li {
+    
+    text-align: right;
+    margin: 0 1rem;
+}
+a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(17, 177, 52);
+}
+
+/*-------------fin header---------*/
+
+main article:nth-child(2n+1) {
+    background-color: rgba(17, 177, 52, 0.514);
+    
+    padding: 8rem 0;
+    color: white;
+}
+main article:nth-child(1), article:nth-child(4) {
+    background-image: url("images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img {
+    margin:2rem 1rem;
+    border-radius: 50%;
+}
+main article:nth-child(2) {
+    padding: 8rem 0;
+}
+/* main article:nth-child(3) {
+    color: white;
+    padding: 8rem 6rem;
+    background-color: rgba(17, 177, 52, 0.637);
+} */
+h2 {
+    font-size: 3rem;
+}
+h3 {
+
+}
+article > a {
+    font-size: 1rem;
+    padding: 1rem 5rem;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    margin: 2rem 0 0 0;
+    display: inline-block;
+}
+article:nth-child(1) a {
+    background-color: rgb(16, 16, 85);
+    color: white;
+}
+article:nth-child(2) a {
+    background-color: rgba(17, 177, 52, 0.514);
+    color: white;
+}
+article:nth-child(3) > a {
+    background-color: white;
+    color: rgba(17, 177, 52, 0.514);
+}
+article:nth-child(3) p > a {
+    color: white;
+    text-decoration:underline;
+}
+span {
+    font-weight: bolder;
+}
+
+/*------------Fin main -----------*/
+form {
+    padding: 2rem 0;
+}
+
+input:not([type=submit]) {
+    height: 2rem;
+    border-radius: 0.3rem;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.548);
+}
+label, input {
+    margin:1rem auto;
+    display: block;    
+}
+#last {
+    display: none;
+}
+input[type=submit] {
+    font-size: 1rem;
+    padding: 1rem 0;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+    margin: 1rem 0 0 0;
+    display: inline-block;
+    width: 10%;
+    background-color: rgba(17, 177, 52, 0.514);
+    color: white;
+    border: none;
+    
+}
+input[type=submit]:hover {
+    background: linear-gradient(29deg, rgb(255, 251, 0) 20%, rgb(0, 26, 255) 95%);
+    -webkit-transition: background 1s ease infinite;
+    -moz-transition: background 1s ease infinite;
+    transition: background 1s ease infinite;
+
+    @-webkit-keyframes background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+    @-moz-keyframes background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+    @keyframes background {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+    
+    color: rgb(255, 0, 255);
+}
+
+/*-----------Fin form------------*/
+
+footer {
+    padding: 5rem 0;
+    background-color: lightgray;
+}
+footer a {
+    font-weight: bolder;
+}
+
+/*-----------Début responsive------*/
+
+@media screen and (max-width: 767px) {
+    body {
+        background: none;
+    }
+    header {
+        background: linear-gradient(90deg, lightgray 45%, gray 95%);
+        border-bottom: 1px solid black;
+        
+    }
+ 
+    nav {
+        display: inline-block;
+    }
+    h1 {
+       width: 70%;
+       text-align: left;
+       margin-right: 10rem;
+    }
+    .fa-bars {
+        width: 20%;
+        text-align: right;
+        font-size: 2rem;
+        display: inline-block;
+    }
+    li {
+        width: 100%;
+        text-align: left;
+        padding: 1.5rem 0 0 0;
+    }
+    ul {
+        display: none;
+        margin-bottom: 0;
+        padding-bottom: 0.5rem;
+    }
+    input[type=submit] {
+        width: 20%;
+    }
+
+    /*----------fin nav tel------*/
+
+    img {
+        display: block;
+        margin:1rem auto;
+        width: 60%;
+    }
+    main article:nth-child(n) {
+        padding: 0.5rem 0 2rem 0;
+    }
+    #last  {
+        display: block;
+    }
+  
+}
+
+/*--------------fin responsive tel portrait----------*/
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body {
+        background: none;
+    }
+    h1 {
+        width: 100%;
+    }
+    img:last-child{
+        display: block;
+        margin: auto;
+    }
+    main article:nth-child(n) {
+        padding: 0.5rem 1.5rem 2rem 1.5rem;
+    }
+    li {
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+    ul {
+        padding: 0;
+    }
+}

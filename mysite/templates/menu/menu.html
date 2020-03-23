@@ -1,0 +1,22 @@
+{% load menu_tags %}
+
+
+
+
+<ul class="nav justify-content-center bg-light text-center">
+{% for child in children %}
+    <li class="nav-item">
+        <a class="nav-link {% if child.selected %} active{% endif %}"
+            href="{{child.attr.redirect_url|default:child.get_absolute_url}}">{{ child.get_menu_title }}</a>
+    </li>
+
+    {% if child.children %}
+        <ul>
+            {% show_menu from_level to_level extra_inactive extra_active template "" "" child %}
+        </ul>
+    {% endif %}
+
+{% endfor %}
+</ul>
+
+

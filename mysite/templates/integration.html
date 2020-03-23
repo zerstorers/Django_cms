@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <header>
+        <nav class="d-flex">
+            <div class="w-50">
+                <h1 class="h3">Start bootstrap</h1>
+            </div>
+            <div class="w-50">
+                <ul class="d-flex justify-content-between">
+                    <li>
+                        <a href="">Service</a>
+                    </li>
+                    <li>
+                        <a href="">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Team</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-center">
+                <h2>Welcome to our studio</h2>
+                <h1>It's nice to meet you</h1>
+                <button type="btn btn-success">Tell me more</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="text-center">
+                <h4>Team</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ea aspernatur alias aut quae opti</p>
+            </div>
+                
+            {% placeholder Team_lister %}
+        </section>
+
+        <section class="mt-5">
+            <div>
+                <div class="row">
+
+                    {% placeholder picture-Liste %}
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+{% endblock content %}

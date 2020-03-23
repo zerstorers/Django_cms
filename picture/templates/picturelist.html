@@ -1,0 +1,10 @@
+
+
+    {% for picture in instance.pictures.all %}
+    <div class="col-4 text-center pt-3">
+        <p>{{ picture.image }}</p>
+        <p>{{ picture.title }}</p>
+        <p>{{ picture.description }}</p>
+    </div>
+    {% endfor %}
+

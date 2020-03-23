@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+
+
+
+
+
+<header>
+    <nav>
+        <ul>
+            <a href="#">
+                <li>HOME</li>
+            </a>
+            <a href="#">
+                <li>ABOUT THE TESTS</li>
+            </a>
+            <a href="#">
+                <li>BUY THEMES</li>
+            </a>
+            <a href="#">
+                <li>PAGE LAYOUTS</li>
+            </a>
+            <a href="#">
+                <li>CONTACT US</li>
+            </a>
+        </ul>
+    </nav>
+    <div id="titre">
+        <h1>CREATE PRO</h1>
+        <h2>PERSONAL•BUSINESS•ORGANIZATION</h2>
+    </div>
+    <div id="logo">
+        <i class="fab fa-facebook-f"> </i>
+        <i class="fab fa-twitter"> </i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-youtube"></i>
+    </div>
+</header>
+<main class="bg-dark">
+    <section>
+        <p>Make first impression count with large headline & full page background. <br>
+            Create is super easy to use, work out-of-the-box and it's great for your personal, business or even <br>
+            organization site.</p>
+    </section>
+
+    <hr>
+
+    <section>
+        
+    </section>
+
+    <section>
+        <article>
+            <img src="/static/images/image1.jpg" alt="">
+            <h2>CATCH FLAMS PRO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quibusdam, odio rerum earum similique
+                repudiandae, illo labore eius, harum enim quasi consequuntur laudantium autem distinctio animi
+                placeat eveniet consectetur esse.</p>
+        </article>
+        <article>
+            <img src="/static/images/image2.jpg" alt="">
+            <h2>ADVENTUROUS PRO</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis commodi officiis amet cumque ab
+                beatae aliquam veniam obcaecati modi dolores aperiam necessitatibus maxime, molestias quo! Obcaecati
+                fugit beatae cum dolores!</p>
+        </article>
+        <article>
+            {% placeholder article_3 %}
+        </article>
+    </section>
+</main>
+<footer>
+
+</footer>
+{% endblock content %}
